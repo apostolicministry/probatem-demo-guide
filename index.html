@@ -361,9 +361,49 @@
     <div class="container footer-grid">
       <div>
         <strong>Probatem</strong>
-        <p>Email: info@probatem.com 
-          Call: 757-570-7674 
-          Mailing Address: 500 East Main St., Suite 1600, #75 Norfolk, VA 23510.</p>
+        <p><div class="footer-contact">
+  <div class="contact-item">
+    <strong>Email</strong>
+    <a href="mailto:info@probatem.com">info@probatem.com</a>
+  </div>
+
+  <div class="contact-item">
+    <strong>Call</strong>
+    <a href="tel:7575707674">757-570-7674</a>
+  </div>
+
+  <div class="contact-item">
+    <strong>Mailing Address</strong>
+    <span>500 East Main St.<br>
+    Suite 1600, #75<br>
+    Norfolk, VA 23510</span>
+  </div>
+</div>.footer-contact {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+.contact-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-item strong {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #c8a86b;
+  margin-bottom: 0.5rem;
+}
+
+.contact-item a,
+.contact-item span {
+  color: #ffffff;
+  text-decoration: none;
+  line-height: 1.6;
+}</p>
       </div>
       <p>Probatem is not a law firm and does not provide legal advice or legal representation.</p>
       <!-- Replace this area with final Probatem contact details, privacy links, and any required legal URLs. -->
